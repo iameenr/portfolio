@@ -1,0 +1,7 @@
+Core principles
+- minimal SDE portfolio
+- vintage themed
+- aesthetically pleasing
+- non-scrollable, poster like 
+- modular, resuable, industry standard code 
+- tech stack : HTML, CSS, FastAPI backend
