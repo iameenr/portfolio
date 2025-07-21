@@ -184,15 +184,32 @@ footer {
         font-size: 16px;
     }
 
+    /* Footer mobile layout */
     footer {
         flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
     }
 
     .social-links {
-        margin-bottom: 10px;
+        margin-bottom: 15px; /* Adjust spacing */
     }
 
     .social-links a {
-        margin: 0 10px;
+        margin: 0 10px 0 0; /* Adjust spacing */
+    }
+
+    /* Contact info mobile layout */
+    .contact {
+        display: flex;
+        flex-direction: column; /* Stack contact info */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .contact span {
+        display: none; /* Hide separator on mobile */
+    }
+
+    .contact a[href^="mailto:"] {
+        margin-bottom: 8px; /* Add space between email and phone */
     }
 }
