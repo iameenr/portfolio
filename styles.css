@@ -1,0 +1,198 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Main container for the portfolio */
+.container {
+    width: 90vw;
+    height: 90vh;
+    max-width: 1200px;
+    max-height: 800px;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 0px #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #333;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Main content area styling */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent main content from overflowing */
+    padding-top: 20px;
+}
+
+/* Hero section styling */
+.hero {
+    text-align: left;
+    padding-bottom: 40px; /* Increased padding */
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 15px 0;
+}
+
+.hero p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Wrapper for experience section */
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* Experience section styling */
+.experience {
+    flex: 1;
+    overflow-y: auto; /* Allow scrolling within the section */
+    padding-right: 15px; /* For scrollbar */
+}
+
+.experience h2 {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Job entry styling */
+.job {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company {
+    font-style: italic;
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.duration {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 2px solid #333;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Custom scrollbar for a vintage feel */
+.experience::-webkit-scrollbar {
+  width: 8px;
+}
+
+.experience::-webkit-scrollbar-track {
+  background: #f5f5dc;
+}
+
+.experience::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+  border: 2px solid #f5f5dc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95vw;
+        height: 95vh;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience h2 {
+        font-size: 24px;
+    }
+
+    .job-title {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-bottom: 10px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}
