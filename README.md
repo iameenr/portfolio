@@ -1,8 +1,10 @@
-# portfolio
-My minimal portfolio -- vintage poster inspired.
+# Portfolio
 
-Check it out if you are free here:
-https://iameenr.github.io/portfolio/
+My minimal portfolio — inspired by vintage posters.
 
-Snip:
-<img width="634" height="333" alt="image" src="https://github.com/user-attachments/assets/a98e1f52-1116-47f1-8861-4107aff77de6" />
+👉 Check it out here: [iameenr.github.io/portfolio](https://iameenr.github.io/portfolio/)
+
+---
+
+## Preview
+<img width="400" height="200" alt="Portfolio preview" src="https://github.com/user-attachments/assets/a98e1f52-1116-47f1-8861-4107aff77de6" />
