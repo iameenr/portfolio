@@ -1,33 +1,31 @@
 /* Import custom font */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-/* General body styling */
 body {
     font-family: 'Fira Code', monospace;
     background-color: #ffffff;
     color: #333;
     margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent scrolling */
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* Main container for the portfolio */
 .container {
     width: 90vw;
-    height: 90vh;
     max-width: 1200px;
-    max-height: 800px;
     border: 2px solid #333;
     box-shadow: 5px 5px 0px #ddd;
     display: flex;
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    margin: auto; /* Center the container */
 }
 
 /* Header styling */
@@ -41,7 +39,7 @@ header {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -50,7 +48,6 @@ main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Prevent main content from overflowing */
     padding-top: 20px;
 }
 
@@ -60,13 +57,8 @@ main {
     padding: 5px; 
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin: 0 0 15px 0;
-}
-
 .hero p {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -74,18 +66,16 @@ main {
 .content-wrapper {
     display: flex;
     flex-grow: 1;
-    overflow: hidden;
 }
 
 /* Experience section styling */
 .experience {
     flex: 1;
-    overflow-y: auto; /* Allow scrolling within the section */
     padding-right: 15px; /* For scrollbar */
 }
 
 .experience h2 {
-    font-size: 32px;
+    font-size: 1.5rem;
     margin: 0 0 20px 0;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
@@ -98,18 +88,18 @@ main {
 
 .job-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .company {
     font-style: italic;
     margin: 3px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .duration {
     color: #777;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /* Footer styling */
@@ -127,13 +117,14 @@ footer {
     text-decoration: none;
     color: #333;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1.125rem;
 }
 
 .contact a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Custom scrollbar for a vintage feel */
@@ -153,22 +144,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
     .container {
         width: 95vw;
-        height: 95vh;
+        min-height: 95vh;
         padding: 15px;
     }
 
     .logo {
-        font-size: 18px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
+        font-size: 1.25rem;
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .content-wrapper {
@@ -177,11 +168,27 @@ footer {
     }
 
     .experience h2 {
-        font-size: 24px;
+        font-size: 1.25rem;
     }
 
     .job-title {
-        font-size: 16px;
+        font-size: 1.14rem;
+    }
+
+    .company {
+        font-size: 0.85rem;
+    }
+
+    .duration {
+        font-size: 0.78rem;
+    }
+
+    .social-links a {
+        font-size: 1.14rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
     }
 
     /* Footer mobile layout */
@@ -191,7 +198,7 @@ footer {
     }
 
     .social-links {
-        margin-bottom: 15px; /* Adjust spacing */
+        margin-bottom: 10px;
     }
 
     .social-links a {
@@ -205,8 +212,16 @@ footer {
         align-items: flex-start; /* Align items to the start */
     }
 
-    .contact span {
+    .contact .separator {
         display: none; /* Hide separator on mobile */
+    }
+
+    .social-links > span:first-child {
+        display: none;
+    }
+
+    .contact-label {
+        display: none;
     }
 
     .contact a[href^="mailto:"] {
@@ -215,7 +230,7 @@ footer {
 }
 
 .hero p {
-    font-size: 16px;
+    font-size: 1rem;
     /* Decrease the font size */
     line-height: 1.5;
     /* Increase the line height */
@@ -224,7 +239,7 @@ footer {
 }
 
 .hero span {
-    font-size: 14px;
+    font-size: 0.875rem;
     /* Decrease the font size */
     line-height: 1.2;
     /* Increase the line height */
