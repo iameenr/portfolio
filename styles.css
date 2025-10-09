@@ -57,7 +57,7 @@ main {
 /* Hero section styling */
 .hero {
     text-align: left;
-    padding-bottom: 40px; /* Increased padding */
+    padding: 5px; 
 }
 
 .hero h1 {
@@ -212,4 +212,27 @@ footer {
     .contact a[href^="mailto:"] {
         margin-bottom: 8px; /* Add space between email and phone */
     }
+}
+
+.hero p {
+    font-size: 16px;
+    /* Decrease the font size */
+    line-height: 1.5;
+    /* Increase the line height */
+    margin-bottom: 10px;
+    /* Add some margin between paragraphs */
+}
+
+.hero span {
+    font-size: 14px;
+    /* Decrease the font size */
+    line-height: 1.2;
+    /* Increase the line height */
+    margin-bottom: 5px;
+    /* Add some margin between lines */
+}
+
+.hero span.bold {
+    font-weight: bold;
+    /* Add bold font weight to make it stand out */
 }
